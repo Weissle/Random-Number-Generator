@@ -28,10 +28,10 @@ RG >> a >> b >> c;
     If you are not sure which kinds of random model will be used until the program runs, you can refer the tutorial below.
     Or the third part of test.cpp 
 ```c
-    RandomModel *ranGen;
-    if ( /* use Normal Distribution Model */) ranGen = new NormalRandomGenerator(20, 10);
-    else if (/* use Meanly Distuibution Model */ ) ranGen = new MeanlyRandomGenerator(10, 20);
-    double temp = ranGen->getOne();
+RandomModel *ranGen;
+if ( /* use Normal Distribution Model */) ranGen = new NormalRandomGenerator(20, 10);
+else if (/* use Meanly Distuibution Model */ ) ranGen = new MeanlyRandomGenerator(10, 20);
+double temp = ranGen->getOne();
 ```
 ## About Pseudo Random
     If you want really random number, you should use a random seed such as srand((unsigned int)time(NULL)); 
