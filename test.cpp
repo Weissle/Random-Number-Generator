@@ -2,6 +2,7 @@
 #include<iostream>
 #include<random>
 #include<time.h>
+#include <assert.h>
 #include"RandomGenerator.h"
 
 using namespace std;
@@ -41,6 +42,21 @@ int main(int argc,char *argv[])
 	for (auto &temp : opTest2)  norepeatint >> temp;
 	for (auto temp : opTest2) cout << temp << " ";
 	cout << endl;
+
+	// Uncertain Random Model while coding
+	RandomGenerator *ranGen;
+	cout << "please choose" << endl << "Normal Distribution Model : 1" << endl << "Probility Random Model : 2" << endl;
+	int choose;
+	cin >> choose;
+	assert((choose == 1 || choose == 2) && "you should type in 1 or 2");
 	
+	if (choose == 1) ranGen = new NormalRandomGenerator(20, 10);
+	else if (choose == 2) ranGen = new ProbilityRandomGenerator();
+
+	randomModelTest(*ranGen, 10);
+	
+
+	
+
 	return 0;
 }
