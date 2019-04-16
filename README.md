@@ -35,4 +35,4 @@ RG >> a >> b >> c;
 ```
 ## About Pseudo Random
     If you want really random number, you should use a random seed such as srand((unsigned int)time(NULL)); 
-    When constructing a **Normal Distribution Model** ,you will not gain really random number if the third parameter not matter have you use a random seed.
+    When constructing a Normal Distribution Model ,you will not gain really random number if the third parameter not matter have you used a random seed.
