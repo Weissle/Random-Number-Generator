@@ -1,9 +1,9 @@
 # Random-Number-Generator
-Randomly generate number in c++
+Generate random number in c++
 ## Four Kinds of Random Model
     Normal Distribution Model // Gaussian Distribution 
     No Repeat Integer Model   // from 0 to n-1 integer
-    Meanly Distribution Model // from min to max 
+    Meanly Distribution Model // from min to max
     Probility Random Model    // meanly distribution from 0 to 1 
 ## API
 ### Constructor Function
@@ -34,5 +34,5 @@ else if (/* use Meanly Distuibution Model */ ) ranGen = new MeanlyRandomGenerato
 double temp = ranGen->getOne();
 ```
 ## About Pseudo Random
-    If you want really random number, you should use a random seed such as srand((unsigned int)time(NULL)); 
-    When constructing a Normal Distribution Model ,you will not gain really random number if the third parameter not matter have you used a random seed.
+    If you want really random number, you should use random seed such as srand((unsigned int)time(NULL)); 
+    When constructing a Normal Distribution Model, you will not gain really random number if the third parameter is false no matter have you used random seed.
